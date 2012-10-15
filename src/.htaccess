@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^0$ index.php?gend=0
+RewriteRule ^1$ index.php?gend=1
+RewriteRule ^rank/$ index.php?model=rank
+RewriteRule ^rank/0$ index.php?model=rank&gend=0
+RewriteRule ^rank/1$ index.php?model=rank&gend=1
+RewriteRule ^about/$ index.php?model=about
+RewriteRule ^about/0$ index.php?model=about&gend=0
+RewriteRule ^about/1$ index.php?model=about&gend=1
+#ErrorDocument 404 error.html

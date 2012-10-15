@@ -1,0 +1,1 @@
+<?php if(isset($_GET['gend'])){$gend = intval($_GET['gend']);}else{$gend = 0;}?>

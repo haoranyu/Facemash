@@ -1,0 +1,1 @@
+<?php if(isset($_GET['gend'])){$gend = intval($_GET['gend']);}else{$gend = 0;}$query = mysql_query("SELECT * FROM `user` WHERE `sex` = '".intval($gend)."' ORDER BY count DESC LIMIT 12");$top = array();while($row = mysql_fetch_array($query)){	$row['uid']=authcode($row['uid'],'ENCODE','axl', $expiry = 600);	array_push($top,$row);}?>
